@@ -72,7 +72,7 @@ select_door <- function( )
 #'   opens either remaining goat door at random. If the contestant's initial
 #'   door selection is a goat, then the other goat door is opened.
 #'
-#' @param game game A length 3 character vector indicating the positions of
+#' @param game A length 3 character vector indicating the positions of
 #' goats and the car
 #' @param a.pick A number between 1 and 3
 #'
@@ -144,7 +144,7 @@ change_door <- function( stay=T, opened.door, a.pick )
 #'   Determine whether the contestant wins or loses
 #'
 #' @description
-#'    `determine_winner()` evaluates whether the contestants wins or loses
+#'    `determine_winner()` evaluates whether the contestant wins or loses
 #'
 #'
 #' @details
@@ -222,15 +222,15 @@ play_game <- function( )
 
 
 #' @title
-#'   Play the Monty Hall game n times and display results
+#'   Plays the Monty Hall game n times and displays the results
 #'
 #' @description
-#'    `play_n_games()` plays a Monty Hall game n times displays the outcome
+#'    `play_n_games()` plays a Monty Hall game n times and displays the outcome
 #'
 #'
 #' @details
-#'   The function plays a 3-door Monty Hall game with 2 goats and 1 car.The
-#'   function loops for a specified number of times. The outcomes arr displayed
+#'   The function plays a 3-door Monty Hall game with 2 goats and 1 car. The
+#'   function loops for a specified number of times. The outcomes are displayed
 #'   for the number of times the contestant wins or loses with each strategy,
 #'   either staying or switching
 #'
@@ -240,7 +240,7 @@ play_game <- function( )
 #' of wins and losses for each strategy
 #'
 #' @examples
-#'   play_n_games(n=1000)
+#'   play_n_games(1000)
 #'
 #' @export
 play_n_games <- function( n=100 )
